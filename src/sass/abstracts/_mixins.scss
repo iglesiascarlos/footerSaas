@@ -1,3 +1,12 @@
 /* ********* */
 /* @MIXINS */
 /* ********* */
+
+@mixin flex($direccion:column,$wrap,$justify:center,$align: center,$gap){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}

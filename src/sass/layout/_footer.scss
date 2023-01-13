@@ -2,3 +2,52 @@
 /* @FOOTER */
 /* ********* */
 
+footer{
+    color: map-get($color, tipografia );
+    background-color: map-get($color, fondo );
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    padding: 4rem 0 0 0;
+    @include flex(column,nowrap,space-between,center,0rem);
+}
+
+.main-text{
+    @include flex(column,nowrap,center,center,2rem);
+    text-align: center;
+    max-width: 50rem;
+}
+
+h1{
+    letter-spacing: 10px;
+    margin-bottom: 2.5rem;
+}
+
+.menu{
+    @include flex(row,nowrap,center,center,3.5rem);
+    font-size: 20px;
+}
+
+p{
+    line-height: 30px;
+}
+
+a{
+    color: map-get($color, tipografia );
+    text-decoration: none;
+}
+
+.bottom{
+    @include flex(row,nowrap,center,center,4rem);
+    width: 100%;
+}
+
+.redes{
+    @include flex(row,nowrap,center,center,2rem);
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
